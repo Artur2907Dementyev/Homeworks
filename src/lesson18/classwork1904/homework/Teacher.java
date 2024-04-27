@@ -5,17 +5,27 @@ public class Teacher {
     int age;
     String subject;
 
-    public Teacher(String name, int age, String subject) {
-        this.name = name;
-        this.age = age;
+    public Teacher() {
+
+    }
+
+    public Teacher(String teacherName) {name = teacherName;}
+
+    public Teacher(String teacherName, String subject){
+        name = teacherName;
         this.subject = subject;
     }
 
-    public String introduce() {
-        return "Hello, I am " + name + ", a teacher.";
-    }
+    public Teacher(String teacherName, int age, String subject) {
+        this(teacherName, subject);
+        this.age = age;
 
-    public String teach() {
-        return name + " is teaching " + subject + ".";
     }
+    public void morning(){System.out.println("good morning Students");
+    }
+    void speaks(){System.out.println("what question we have");}
+    void task(){System.out.println("Here is your homework");}
+
+    public void whoAmI() {
+        System.out.println("His age is "+ age +" and his name is " + name + " is teaching " + subject + ".");}
 }

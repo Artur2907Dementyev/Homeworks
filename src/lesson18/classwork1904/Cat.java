@@ -37,8 +37,4 @@ public class Cat {
     public void whoAmI() {
         System.out.println("Iam Cat " + name + ", my age: " + age + ", my color: " +color);
     }
-
-
-
-
 }
