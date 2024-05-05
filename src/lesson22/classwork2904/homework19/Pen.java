@@ -24,9 +24,12 @@ public class Pen {
 
     }
         System.out.println();
-
     }
+    /*
+    git add ./src/
+git commit -m "add homework 19"
+git push origin main
 
-
+     */
 }
 

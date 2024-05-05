@@ -1,5 +1,7 @@
 package lesson21.classwork2604.example01;
 
+import lesson23.classwork0305.example02.Human;
+
 public class BankAccount {
 
     private String fullName;
@@ -8,6 +10,7 @@ public class BankAccount {
     private double amount;
 
     public BankAccount(String fullName, String iban, AccountType accountType) {
+        // Доп задание: сделать метод, автоматически создающий IBAN
         this.fullName = fullName;
         this.iban = iban;
         this.accountType = accountType;
@@ -20,6 +23,10 @@ public class BankAccount {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
+    }
+
+    public String getIban() {
+        return iban;
     }
 
     public AccountType getAccountType() {
@@ -35,15 +42,13 @@ public class BankAccount {
     }
 
     public void withdraw(double amount) {
-        if (amount < this.amount
-            || accountType == AccountType.CREDIT) {
+        if (amount <= this.amount
+                || accountType == AccountType.CREDIT) {
             this.amount -= amount;
         }
-
     }
 
     public boolean hasDebt() {
         return amount < 0;
     }
-
 }

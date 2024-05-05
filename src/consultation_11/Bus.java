@@ -1,5 +1,7 @@
 package consultation_11;
 
+import java.util.Arrays;
+
 public class Bus {
     private static int counter;
 
