@@ -1,4 +1,4 @@
-package lesson22.classwork2904.homework19;
+package lesson24.classwork0605.HW;
 
 public class Pen {
     private int inkAmount;
@@ -12,33 +12,20 @@ public class Pen {
     }
 
     public void write(String text) {
-        // проходим по всей строке
         for (int i = 0; i < text.length(); i++) {
-            // если чернила закончились
             if (inkAmount == 0) {
-                // прекращаем писать
                 break;
             }
-            // пишем букву
+
             System.out.print(text.charAt(i));
-            // уменьшаем к-во чернил на 1
             inkAmount--;
         }
         System.out.println();
     }
-
     public void refill() {
         inkAmount = 100;
     }
-
     public void checkInk() {
         System.out.println("Remaining ink: " + inkAmount);
     }
 }
-
-/*
-    git add ./src/
-git commit -m "add homework 19"
-git push origin main
-
-     */

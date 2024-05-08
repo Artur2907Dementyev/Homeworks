@@ -4,12 +4,9 @@ public class Seller {
     private final Product[] warehouse;
 
     public Seller() {
-        // Initialize the warehouse with products (size 10)
         warehouse = new Product[10];
-        // Add products to the warehouse (you can fill in the details)
-        // Example:
         warehouse[0] = new Product("Apple", 20, 1.99);
-        // ...
+
     }
 
     public double announcePrice(String productName, int quantity) {
@@ -18,7 +15,7 @@ public class Seller {
                 return product.getPrice();
             }
         }
-        return -1; // Product not found or insufficient quantity
+        return -1;
     }
 
     public void sellProduct(String productName, int quantity) {
