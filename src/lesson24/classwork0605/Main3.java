@@ -2,7 +2,7 @@ package lesson24.classwork0605;
 
 import java.util.Scanner;
 
-public class Main3 {
+public class  Main3 {
     public static void main(String[] args) {
         Object[] objects = new Object[10];
         objects[0] = 41;
@@ -15,7 +15,7 @@ public class Main3 {
 
 /*
     git add ./src/
-git commit -m "add homework 19"
+git commit -m "add homework 1"
 git push origin main
 
      */
