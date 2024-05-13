@@ -18,14 +18,14 @@ public class Main {
                 System.out.print("Enter width of the rectangle: ");
                 double width = scanner.nextDouble();
                 Rectangle rectangle = new Rectangle(length, width);
-                perimeter = rectangle.getSquare();
+                perimeter = rectangle.getPerimeter();
                 break;
 
             case "circle":
                 System.out.print("Enter radius of the circle: ");
                 double radius = scanner.nextDouble();
                 Circle circle = new Circle(radius);
-                perimeter = circle.getSquare();
+                perimeter = circle.getPerimeter();
                 break;
 
             case "polygon":
@@ -34,7 +34,7 @@ public class Main {
                 System.out.print("Enter length of one side of the polygon: ");
                 double sideLength = scanner.nextDouble();
                 RegularPolygon polygon = new RegularPolygon(sides, sideLength);
-                perimeter = polygon.getSquare();
+                perimeter = polygon.getPerimeter();
                 break;
 
             default:

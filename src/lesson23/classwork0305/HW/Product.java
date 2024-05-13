@@ -11,12 +11,12 @@ public class Product {
         this.price = price;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
-        this.name = (String) name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getQuantity() {

@@ -1,31 +1,24 @@
 package lesson23.classwork0305.HW;
 
-public class Seller {
-    private final Product[] warehouse;
+public class Seller extends Person {
+    private Product[] warehouse;
 
-    public Seller() {
+    public Seller(String name) {
+        super(name);
+        // Initialize the warehouse with sample products
         warehouse = new Product[10];
-        warehouse[0] = new Product("Apple", 20, 1.99);
-
+        // Fill the warehouse with actual products (you can set sample values here)
     }
 
     public double announcePrice(String productName, int quantity) {
-        for (Product product : warehouse) {
-            if (product != null && product.getName().equals(productName) && product.getQuantity() >= quantity) {
-                return product.getPrice();
-            }
-        }
-        return -1;
+        // Implement linear search to find the product and return its price
+        // Return -1 if not found
+        // ...
+        return 0;
     }
 
     public void sellProduct(String productName, int quantity) {
-        for (Product product : warehouse) {
-            if (product != null && product.getName().equals(productName) && product.getQuantity() >= quantity) {
-                product.setQuantity(product.getQuantity() - quantity);
-                System.out.println("Sold " + quantity + " " + productName + "(s).");
-                return;
-            }
-        }
-        System.out.println(productName + " not available in sufficient quantity.");
+        // Remove the product from the warehouse
+        // ...
     }
 }

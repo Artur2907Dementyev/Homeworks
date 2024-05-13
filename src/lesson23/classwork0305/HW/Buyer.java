@@ -8,16 +8,20 @@ public class Buyer extends Person{
         this.money = money;
     }
 
-    public boolean giveMoneyForPurchase(double amount) {
+    public boolean startShopping(Seller seller, String productName, int quantity) {
+        double price = seller.announcePrice(productName, quantity);
+        if (price != -1 && giveMoneyForPurchase(price)) {
+            seller.sellProduct(productName, quantity);
+            return true;
+        }
+        return false;
+    }
+
+    private boolean giveMoneyForPurchase(double amount) {
         if (money >= amount) {
             money -= amount;
             return true;
-        } else {
-            return false;
         }
-    }
-
-    public boolean getName() {
         return false;
     }
 }

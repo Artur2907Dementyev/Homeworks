@@ -1,22 +1,14 @@
 package lesson25.classwork0805.HW;
 
-public class Circle implements Shape {
-    private double r;
+class Circle extends Shape {
+    private double radius;
 
-    public Circle(double r) {
-        this.r = r;
-    }
-
-    public double getR() {
-        return r;
-    }
-
-    public void setR(double r) {
-        this.r = r;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
     @Override
-    public double getSquare() {
-        return Math.PI * Math.pow(r, 2);
+    double getPerimeter() {
+        return 2 * Math.PI * radius;
     }
 }

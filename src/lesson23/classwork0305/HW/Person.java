@@ -8,6 +8,6 @@ public class Person {
     }
 
     public void introduce() {
-        System.out.println("Hello, my name is " + name + ".");
+        System.out.println("Hello, my name is " + name);
     }
 }
