@@ -1,7 +1,7 @@
 package lesson23.classwork0305.HW;
 
 public class Main {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
     }
     Seller seller = new Seller("SuperMart");
@@ -12,5 +12,5 @@ public class Main {
         System.out.println("Purchase successful!");
     } else {
         System.out.println("Not enough money or product unavailable.");
-    }
+    }*/
 }
