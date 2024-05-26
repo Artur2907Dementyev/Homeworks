@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int size = scanner.nextInt();
 
         int[] array = new int[size];
@@ -20,13 +19,13 @@ public class Task1 {
 
         int[] doubledArray = new int[size * 2];
 
-        /*for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             doubledArray[i * 2] = array[i];
-            doubledArray[i]
+            doubledArray[i * 2 + 1] = array[i];
         }
 
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }*/
+        for (int i = 0; i < doubledArray.length; i++) {
+            System.out.print(doubledArray[i] + " ");
+        }
     }
 }
