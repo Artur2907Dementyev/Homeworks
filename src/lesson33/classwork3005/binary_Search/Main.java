@@ -1,4 +1,4 @@
-package lessons33.classwork3005.binary_Search;
+package lesson33.classwork3005.binary_Search;
 
 public class Main {
     public static void main(String[] args) {

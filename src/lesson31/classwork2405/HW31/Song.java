@@ -38,7 +38,6 @@ class Playlist {
         songs.remove(song);
     }
 
-
     public List<Song> getListeningQueue() {
         return songs;
     }
