@@ -6,13 +6,13 @@ public class Main {
         NumberChecker numberChecker = new NumberChecker();
 
         try {
-            sumCalculator.calculateSum(150); // Пример вызова метода
+            sumCalculator.calculateSum(150);
         } catch (SumCalculator.UncheckedCustomException e) {
             System.out.println(e.getMessage());
         }
 
         try {
-            numberChecker.checkNumbers(5, 10); // Пример вызова метода
+            numberChecker.checkNumbers(5, 10);
         } catch (NumberChecker.CheckedCustomException e) {
             System.out.println(e.getMessage());
         }
