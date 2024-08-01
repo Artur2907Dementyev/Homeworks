@@ -9,12 +9,12 @@ public class AudioTrack implements Playable{
 
     @Override
     public void play() {
-        System.out.println("Воспроизведение аудиотрека: " + title);
+        System.out.println("Playing an audio track: " + title);
     }
 
     @Override
     public void printInfo() {
-        System.out.println("Аудиотрек: " + title);
+        System.out.println("Audio track: " + title);
     }
 }
 

@@ -21,9 +21,9 @@ public class MediaPlayer {
 
     public static void main(String[] args) {
         MediaPlayer player = new MediaPlayer();
-        AudioTrack track1 = new AudioTrack("Song 1");
-        AudioTrack track2 = new AudioTrack("Song 2");
-        Video video1 = new Video("Movie 1");
+        AudioTrack track1 = new AudioTrack("Song: Группа крови Zoi");
+        AudioTrack track2 = new AudioTrack("Song: Engel Rammstein");
+        Video video1 = new Video("Movie: WALL·E");
 
         player.addToPlaylist(track1, track2, video1);
         player.playAll();

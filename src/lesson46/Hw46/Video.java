@@ -9,11 +9,11 @@ public class Video implements Playable {
 
     @Override
     public void play() {
-        System.out.println("Воспроизведение видео: " + title);
+        System.out.println("Playing video: " + title);
     }
 
     @Override
     public void printInfo() {
-        System.out.println("Видео: " + title);
+        System.out.println("Video: " + title);
     }
 }

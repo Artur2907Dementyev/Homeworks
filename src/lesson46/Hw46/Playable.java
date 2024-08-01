@@ -4,7 +4,7 @@ public interface Playable {
     void play();
 
     default void printInfo() {
-        System.out.println("Это запускаемый файл.");
+        System.out.println("This is the executable file.");
     }
 }
 
